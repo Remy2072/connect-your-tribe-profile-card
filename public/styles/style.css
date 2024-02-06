@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #e3dbf6, #9ba6f9);
+    padding: 10px;
+}
+
+.card {
+    width: 21.875rem;
+    height: 32.188rem;
+    margin: 12.5rem auto 0;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url(/img/remy.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3.75rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.front h2 {
+    font-weight: 500;
+}
+
+.front p {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.front button {
+    width: 7.5rem;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 3.125rem;
+    padding: 8px 1.25rem;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    color: #fff;
+}
+
+.back {
+    background: linear-gradient(135deg, #eee7ff, #cfd4ff);
+    color: #2d2d2d;
+    padding: 1.25rem 2.5rem;
+    transform: rotateY(180deg);
+}
+
+.back h1 {
+    font-size: 3.125rem;
+    line-height: 3.438rem;
+    margin-bottom: 10px;
+}
+
+.back p {
+    font-size: 14px;
+}
+
+.back button {
+    background: #2d2d2d;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 8px 1.563rem;
+    border-radius: 1.875rem;
+    font-size: 14px;
+    margin: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.back button:hover {
+    background: linear-gradient(135deg, #e4d9ff, #bec4ff);
+    color: #2d2d2d;
+}
+
+.back a {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.back a:hover {
+    background: linear-gradient(135deg, #e4d9ff, #bec4ff);}
+
+.back img {
+    width: 70%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 1.875rem;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 12px;
+    position: relative;
+}
+
+.col h2 {
+    font-size: 1.25rem;
+}
+
+.col p {
+    margin-top: 5px;
+}
+
+.col::after {
+    content: "";
+    width: 1.5px;
+    height: 1.25rem;
+    background: #2d2d2d;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+.col:last-child::after {
+    display: none;
+}

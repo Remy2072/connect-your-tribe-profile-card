@@ -1,14 +1,42 @@
 <%- include('./partials/head') %>
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
-
-  <p><%= data.name %></p>
-
-  <footer></footer>
-</article>
+<section class="container">
+  <div class="card">
+      <div class="card-inner">
+          <div class="front">
+              <h2>Remy Duivesteijn</h2>
+              <p>Web Developer, A'DAM</p>
+              <button>hover me</button>
+          </div>
+          <div class="back">
+              <h1>Remy Duivesteijn</h1>
+              <p>
+                  I am a first year student at the HvA 📚 <br>I currently work in a gas station ⛽️ 
+                  and pasta is my favorite meal 🍝 
+                  I am often told by friends and teachers that I am very social but also very stubborn 😈
+              </p>
+              <div class="row">
+                  <div class="col">
+                      <h2>❌ ❌ ❌</h2>
+                      <p>Amsterdam</p>
+                  </div>
+                  <div class="col">
+                      <h2>2️⃣ 0️⃣</h2>
+                      <p>Leeftijd</p>
+                  </div>
+                  <div class="col">
+                      <h2>💪🏼</h2>
+                      <p>Sportschool</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <button>follow</button>
+                  <a href="https://www.instagram.com/remy2072/" target="_blank"><img src="img/instagram.png" alt="instagram logo"></a>
+                  <a href="https://open.spotify.com/user/jfcceg1kskkzucac21zh500kl?si=db06d2c933d64546" target="_blank"><img src="img/spotify.png" alt="spotify logo"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 <%- include('./partials/foot') %>
