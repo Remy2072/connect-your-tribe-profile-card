@@ -8,7 +8,7 @@ Een visitekaartje gemaakt met een APi
 - Screenshot
 - Demo
 - Wiki
-- Opdracht gever
+- Instructies
 
 ## Screenshot
 
@@ -17,3 +17,5 @@ Een visitekaartje gemaakt met een APi
 ## Wiki
 [Link naar wiki](https://github.com/Remy2072/connect-your-tribe-profile-card/wiki)
 
+## Instructies
+[Link naar instructies](/docs/INSTRUCTIONS.md)
