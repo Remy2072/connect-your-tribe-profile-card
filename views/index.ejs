@@ -1,42 +1,34 @@
 <%- include('./partials/head') %>
 
 <section class="container">
-  <div class="card">
-      <div class="card-inner">
-          <div class="front">
-              <h2>Remy Duivesteijn</h2>
-              <p>Web Developer, A'DAM</p>
-              <button>hover me</button>
-          </div>
-          <div class="back">
-              <h1>Remy Duivesteijn</h1>
-              <p>
-                  I am a first year student at the HvA 📚 <br>I currently work in a gas station ⛽️ 
-                  and pasta is my favorite meal 🍝 
-                  I am often told by friends and teachers that I am very social but also very stubborn 😈
-              </p>
-              <div class="row">
-                  <div class="col">
-                      <h2>❌ ❌ ❌</h2>
-                      <p>Amsterdam</p>
-                  </div>
-                  <div class="col">
-                      <h2>2️⃣ 0️⃣</h2>
-                      <p>Leeftijd</p>
-                  </div>
-                  <div class="col">
-                      <h2>💪🏼</h2>
-                      <p>Sportschool</p>
-                  </div>
-              </div>
-              <div class="row">
-                  <button>follow</button>
-                  <a href="https://www.instagram.com/remy2072/" target="_blank"><img src="img/instagram.png" alt="instagram logo"></a>
-                  <a href="https://open.spotify.com/user/jfcceg1kskkzucac21zh500kl?si=db06d2c933d64546" target="_blank"><img src="img/spotify.png" alt="spotify logo"></a>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div>
+        <h1><%= data.name + " " + data.surname %></h1>
+        <p><%= data.bio %></p>
+        <box-icon name='mouse' animation='fade-down' color='#ffffff' size="lg"></box-icon>
+    </div>
+    <a href="mailto:remy.duivesteijn@hva.nl"><%= data.email %></a>
+</section>
+<section class="container-2">
+    <ul>
+        <li>
+            <a href="<%= data.github_handle %>" target=”_blank”>
+                <img src="<%= data.avatar %>" alt="GitHub logo">
+                <strong>GitHub</strong>
+            </a>
+        </li>
+        <li>
+            <a href="https://direct.playstation.com/nl-nl" target=”_blank”>
+                <img src="img/playstation.jpeg" alt="Playstation logo">
+                <strong><%= data.nickname %></strong>
+            </a>
+        </li>
+        <li>
+            <a href="<%= data.website %>" target=”_blank”>
+                <img src="img/rLogo.png" alt="Portfolio logo">
+                <strong>Portfolio</strong>
+            </a>
+        </li>
+    </ul>
 </section>
 
 <%- include('./partials/foot') %>
